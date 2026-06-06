@@ -21,10 +21,10 @@ data/db/
 *.log
 mongodb.log
 mongod.lock
+temp_auto_push.bat
 
 # --- OS & IDE Files ---
 .DS_Store
-.vscode/
 .idea/
 *.suo
 *.ntvs*
@@ -44,4 +44,5 @@ coverage/
 .nyc_output
 
 # React email: 
-.react-email
+.react-email.gitignore
+branch_structure.json
