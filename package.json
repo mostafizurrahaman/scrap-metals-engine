@@ -3,8 +3,8 @@
   "private": true,
   "packageManager": "pnpm@10.27.0",
   "scripts": {
-    "dev": "turbo dev",
-    "build": "turbo build",
+    "dev": "node init && turbo dev",
+    "build": "node init && turbo build",
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",
     "format": "prettier --write \"**/*.{ts,js,json,md}\"",
@@ -13,7 +13,9 @@
     "clean": "turbo clean && rm -rf node_modules"
   },
   "dependencies": {
-    "cross-env": "^10.1.0"
+    "cross-env": "^10.1.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
